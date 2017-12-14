@@ -188,7 +188,7 @@ const serverConfig = function(root, settings) {
          * See: https://github.com/angular/angular-cli
          */
         {
-          test: /\.ts$/,
+          test: /(?:\.ngfactory\.js|\.ngstyle\.js|\.ts)$/,
           use: '@ngtools/webpack',
           exclude: [/\.(spec|e2e)\.ts$/]
         },
