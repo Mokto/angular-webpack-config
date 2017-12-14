@@ -5,7 +5,7 @@ const defaultConfig = require('./webpack.spa.common'),
   prodConfig = require('./webpack.common.prod'),
   webpackMerge = require('webpack-merge');
 
-const aotPlugin = require('@ngtools/webpack').AotPlugin;
+const aotPlugin = require('@ngtools/webpack').AngularCompilerPlugin;
 
 /**
  * Webpack configuration
