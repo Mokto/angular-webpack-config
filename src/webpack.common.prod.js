@@ -119,11 +119,11 @@ const browserConfig = function(root) {
        *
        * See: https://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
        */
-      //new uglifyJsPlugin({
-      //  uglifyOptions: {
-      //    ecma: 6
-      //  }
-      //}),
+      new uglifyJsPlugin({
+        uglifyOptions: {
+          ecma: 6
+        }
+      }),
 
       // fix Angular
       new normalModuleReplacementPlugin(
@@ -192,12 +192,12 @@ const serverConfig = function() {
        *
        * See: https://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
        */
-      new uglifyJsPlugin({
-        uglifyOptions: {
-          ecma: 6,
-          mangle: false
-        }
-      })
+      //new uglifyJsPlugin({
+      //  uglifyOptions: {
+      //    ecma: 6,
+      //    mangle: false
+      //  }
+      //})
     ]
   };
 };
